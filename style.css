@@ -1,0 +1,322 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Costum Style */
+
+html {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255 255 255);
+  font-family: "Raleway", sans-serif;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1232px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.width-full {
+  width: 100%;
+}
+
+/* flex */
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.item-center {
+  align-items: center;
+}
+
+.flex25 {
+  flex: 0 1 25%;
+}
+
+.flex30 {
+  flex: 0 1 30%;
+}
+
+.flex35 {
+  flex: 0 1 35%;
+}
+
+.flex40 {
+  flex: 0 1 40%;
+}
+
+.flex50 {
+  flex: 0 1 50%;
+}
+
+.flex60 {
+  flex: 0 1 60%;
+}
+
+.flex100 {
+  flex: 0 1 100%;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+/* padding */
+
+.padding {
+  padding: 2rem 0;
+}
+
+/* Header */
+
+.brand {
+  color: rgb(99 85 81);
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.navmenu li {
+  margin-left: 1.5rem;
+}
+
+.navmenu li a {
+  text-decoration: none;
+  color: rgb(99 85 81);
+}
+
+.fa-angle-down {
+  font-size: 1rem;
+}
+
+.navmenu li .active-nav {
+  text-decoration: none;
+  color: #ea5333;
+}
+
+.navmenu li :hover {
+  color: #ea5333;
+}
+
+.sub-menu-box {
+  position: relative;
+}
+
+.sub-menu {
+  position: absolute;
+  background-color: rgb(255 255 255);
+  box-shadow: 0 0.2rem 0.3rem #bca4a0;
+  width: 11rem;
+  text-align: center;
+  border-radius: 0.3rem;
+  transform: translateX(-50%);
+  left: 50%;
+  display: none;
+  top: 1.1rem;
+  padding: 0.3rem;
+}
+
+.sub-menu li {
+  margin-top: 1.2rem;
+  margin-left: 0;
+}
+
+.sub-menu-box:hover .sub-menu {
+  display: inline-block;
+}
+
+.inside-sub-menu-box {
+  position: relative;
+}
+
+.inside-sub-menu {
+  position: absolute;
+  background-color: rgb(255 255 255);
+  box-shadow: 0 0.1rem 0.2rem #bcaeab;
+  width: 11rem;
+  text-align: center;
+  border-radius: 0.3rem;
+  transform: translateX(50%);
+  left: 30%;
+  display: none;
+  top: 1.5rem;
+  padding: 0.3rem;
+}
+
+.inside-sub-menu li {
+  margin-top: 1.2rem;
+}
+
+.inside-sub-menu-box:hover .inside-sub-menu {
+  display: inline-block;
+}
+
+/* Main (Hero) */
+
+.hero {
+}
+
+.hero-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(media/hero-bg.jpg) no-repeat;
+  flex: 0 1 100%;
+  background-size: cover;
+  height: 30rem;
+}
+
+.hero-bg h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(255 255 255);
+}
+
+.hero-bg span {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgb(255 255 255);
+}
