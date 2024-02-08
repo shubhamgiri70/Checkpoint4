@@ -194,6 +194,10 @@ body {
   flex: 0 1 40%;
 }
 
+.flex45 {
+  flex: 0 1 45%;
+}
+
 .flex50 {
   flex: 0 1 50%;
 }
@@ -214,6 +218,12 @@ body {
 
 .padding {
   padding: 2rem 0;
+}
+
+/* text */
+
+.text-center {
+  text-align: center;
 }
 
 /* Header */
@@ -448,6 +458,7 @@ body {
   line-height: 1.5;
   margin-bottom: 0.5rem;
   padding: 1rem;
+  text-align: center;
 }
 
 .card span p {
@@ -455,6 +466,7 @@ body {
   color: #313030;
   padding: 1rem;
   line-height: 1.5;
+  text-align: center;
 }
 
 /* section3 */
@@ -463,9 +475,6 @@ body {
   background: url(media/about-img.jpg) no-repeat;
   flex: 0 1 40%;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .fa-circle-play {
@@ -486,10 +495,6 @@ body {
     transform: scale(1);
   }
 }
-
-/* .bg-image-about .fa-circle-play :hover{
-  background-color: #da8366;
-} */
 
 .about {
   width: 100%;
@@ -530,6 +535,10 @@ body {
   margin: 4rem 0;
 }
 
+/* .fa-fingerprint :hover{
+  color: #ffffff;
+} */
+
 .finger-print span {
   border: 0.1rem solid #deb4a6;
   background-color: #ffffff;
@@ -556,7 +565,7 @@ body {
   line-height: 1.5;
 }
 
-/* Section 4 */
+/* Section 4 (Client) */
 
 .clients {
   background-color: #ffffff;
@@ -568,5 +577,104 @@ body {
 
 .clients div a img {
   width: 10rem;
-  margin-left: 5rem;
+  margin-right: 5rem;
+  filter: grayscale(100%);
+}
+
+.clients div a img:hover {
+    filter: grayscale(0%);
+}
+
+/* Section 5 (Services) */
+
+.service {
+  width: 100%;
+  background-color: #fef9f7;
+}
+
+.service article h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #554945;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.service article p {
+  color: black;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+/* Service Card */
+
+.service-card-menu {
+  margin-top: 4rem;
+}
+
+.service-card {
+  background-color: rgb(255 255 255);
+  box-shadow: 0.7rem 0.6rem 2rem rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.service-card span {
+  width: 4rem;
+  height: 4rem;
+  background-color: #dd610e;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10.5rem;
+  right: 9.5rem;
+  color: #ffffff;
+}
+
+.service-card span i {
+  font-size: 2rem;
+  padding: 0.9rem;
+}
+
+.service-card span:hover {
+  border: 0.2rem solid #dd610e;
+  background-color: #ffffff;
+  color: #dd610e;
+}
+
+
+.service-card h5 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.service-card p {
+  color: black;
+  font-size: 1rem;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+}
+
+/* Section 6 (Company-future) */
+
+.company-future{
+  width: 100%;
+  background-color: #ffffff;
+  height: auto;
+}
+
+/* .company-future div{
+  height: 40rem;
+} */
+
+
+.bg-img-mission{
+  background: url(media/values-1.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
 }
