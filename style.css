@@ -156,6 +156,10 @@ body {
   width: 100%;
 }
 
+.fixed-position {
+  position: fixed;
+}
+
 /* flex */
 
 .flex {
@@ -168,6 +172,10 @@ body {
 
 .justify-center {
   justify-content: center;
+}
+
+.item-end {
+  align-items: end;
 }
 
 .item-center {
@@ -194,8 +202,8 @@ body {
   flex: 0 1 40%;
 }
 
-.flex45 {
-  flex: 0 1 45%;
+.flex48 {
+  flex: 0 1 48%;
 }
 
 .flex50 {
@@ -227,6 +235,11 @@ body {
 }
 
 /* Header */
+
+.header {
+  background-color: #ffffff;
+  z-index: 2;
+}
 
 .brand {
   color: rgb(99 85 81);
@@ -535,17 +548,13 @@ body {
   margin: 4rem 0;
 }
 
-/* .fa-fingerprint :hover{
-  color: #ffffff;
-} */
-
 .finger-print span {
   border: 0.1rem solid #deb4a6;
   background-color: #ffffff;
   border-radius: 50%;
 }
 
-.finger-print span :hover {
+.finger-print span:hover {
   background-color: #e3a08a;
   border-radius: 50%;
 }
@@ -582,7 +591,7 @@ body {
 }
 
 .clients div a img:hover {
-    filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 
 /* Section 5 (Services) */
@@ -635,12 +644,19 @@ body {
   padding: 0.9rem;
 }
 
-.service-card span:hover {
+.service-card:hover > span {
   border: 0.2rem solid #dd610e;
   background-color: #ffffff;
+}
+
+.service-card:hover > span > .fa-solid,
+.fa-regular {
   color: #dd610e;
 }
 
+.service-card:hover > h5 {
+  color: #dd610e;
+}
 
 .service-card h5 {
   text-transform: uppercase;
@@ -661,20 +677,137 @@ body {
 
 /* Section 6 (Company-future) */
 
-.company-future{
+.company-future {
   width: 100%;
   background-color: #ffffff;
   height: auto;
 }
 
-/* .company-future div{
-  height: 40rem;
-} */
-
-
-.bg-img-mission{
+.bg-img-mission {
   background: url(media/values-1.jpg) no-repeat;
+}
+
+.bg-img {
   background-size: cover;
+  height: 20rem;
   width: 100%;
-  height: auto;
+  margin-top: 2rem;
+  border-radius: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.bg-transparent {
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 9rem;
+  width: 80%;
+  margin-bottom: 2rem;
+  border-radius: 0.2rem;
+  color: #554945;
+}
+
+.bg-transparent:hover {
+  background: rgba(220, 96, 14, 1);
+}
+
+.bg-transparent:hover > * {
+  color: #ffffff;
+}
+
+.bg-transparent i,
+.bg-transparent a {
+  color: inherit;
+}
+
+.bg-transparent h5 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: capitalize;
+  margin-top: 0.5rem;
+}
+
+.bg-transparent p {
+  padding: 1rem;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.bg-transparent span {
+  padding: 0 1rem;
+}
+
+.bg-transparent a {
+  text-decoration: none;
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.bg-img-plan {
+  background: url(media/values-2.jpg) no-repeat;
+}
+
+.bg-img-vision {
+  background: url(media/values-3.jpg) no-repeat;
+}
+
+.bg-img-care {
+  background: url(media/values-4.jpg) no-repeat;
+}
+
+/* section7 (Testimonials) */
+
+.testimonials-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(media/testimonials-bg.jpg) no-repeat fixed;
+  /* background-size: cover; */
+  height: 35rem;
+  overflow: auto;
+}
+
+.testimonials-bg::-webkit-scrollbar {
+  width: 0;
+}
+
+.testimonials-bg::-webkit-scrollbar-thumb {
+  width: 0;
+}
+
+.testimonials-txt {
+  flex: 0 0 100%;
+  color: #ffffff;
+}
+
+.testimonials-txt span img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 0.3rem solid rgb(98 97 92);
+  margin-bottom: 1rem;
+}
+
+.testimonials-txt h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.testimonials-txt span {
+  font-size: 1rem;
+  text-transform: capitalize;
+  line-height: 1.5;
+}
+
+.testimonials-txt div {
+  margin-top: 2rem;
+}
+
+.testimonials-txt div i {
+  font-size: 1.5rem;
+}
+
+.testimonials-txt div p {
+  display: inline;
+  line-height: 1.5;
 }
