@@ -870,6 +870,7 @@
           </div>
         </article>
       </section>
+      <!-- Section (Contact) -->
       <section class="contact">
         <article class="container padding">
           <h2>Contact</h2>
@@ -893,22 +894,131 @@
               </div>
               <div class="contact-card flex30">
                 <span class="flex item-center"
-                  ><i class="fa-regular fa-envelope" style="color: #e17014;"></i>
+                  ><i class="fa-regular fa-envelope" style="color: #e17014"></i>
                   <h3>email us</h3>
                 </span>
-                <small>info@example.com<br>contact@exapmle.com</small>
+                <small>info@example.com<br />contact@exapmle.com</small>
               </div>
               <div class="contact-card flex30">
                 <span class="flex item-center"
-                  ><i class="fa-solid fa-phone-volume" style="color: #e17014;"></i>
+                  ><i
+                    class="fa-solid fa-phone-volume"
+                    style="color: #e17014"
+                  ></i>
                   <h3>call us</h3>
                 </span>
-                <small>+1 5568493465 <br>+1 8568433466</small>
+                <small>+1 5568493465 <br />+1 8568433466</small>
               </div>
+            </div>
+          </article>
+          <article class="contact-form flex justify-center">
+            <div class="flex justify-center width-full">
+              <form action="send-message.php" method="post">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required />
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                ></textarea>
+
+                <input type="submit" value="Send Message" />
+              </form>
             </div>
           </article>
         </article>
       </section>
+      <!-- Section (Newsletter) -->
+      <section class="newsletter">
+        <article class="container padding flex justify-between item-baseline">
+          <div class="add flex20">
+            <h3>Flexore</h3>
+            <p>A108, Adam street, New York, NY 543467(USA)</p>
+            <span
+              >Phone: <small>+1 5468924804</small><br />Email:
+              <small>info@example.com</small></span
+            >
+          </div>
+          <div class="links-services flex15">
+            <h4>Usefull Links</h4>
+            <span class="flex item-center">
+              <i class="fa-solid fa-angle-right" style="color: #e17014"></i>
+              <small>Home</small>
+            </span>
+            <span class="flex item-center">
+              <i class="fa-solid fa-angle-right" style="color: #e17014"></i>
+              <small>About us</small>
+            </span>
+            <span class="flex item-center">
+              <i class="fa-solid fa-angle-right" style="color: #e17014"></i>
+              <small>Services</small>
+            </span>
+            <span class="flex item-center">
+              <i class="fa-solid fa-angle-right" style="color: #e17014"></i>
+              <small>Terms of Service</small>
+            </span>
+            <span class="flex item-center">
+              <i class="fa-solid fa-angle-right" style="color: #e17014"></i>
+              <small>Privicy policy</small>
+            </span>
+          </div>
+          <div class="links-services flex15">
+            <h4>Our Services</h4>
+            <span class="flex item-center">
+              <i class="fa-solid fa-angle-right" style="color: #e17014"></i>
+              <small>Web design</small>
+            </span>
+            <span class="flex item-center">
+              <i class="fa-solid fa-angle-right" style="color: #e17014"></i>
+              <small>Web Development</small>
+            </span>
+            <span class="flex item-center">
+              <i class="fa-solid fa-angle-right" style="color: #e17014"></i>
+              <small>Product Management</small>
+            </span>
+            <span class="flex item-center">
+              <i class="fa-solid fa-angle-right" style="color: #e17014"></i>
+              <small>Marketing</small>
+            </span>
+            <span class="flex item-center">
+              <i class="fa-solid fa-angle-right" style="color: #e17014"></i>
+              <small>Graphic design</small>
+            </span>
+          </div>
+          <div class="newsletter-btn flex30">
+            <h2>Join our newsletter</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit Atque
+              saepe
+            </p>
+            <div class="subscribe flex ju"><a href="#">subscribe</a></div>
+          </div>
+        </article>
+      </section>
     </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container padding flex justify-between item-center">
+        <div>
+          <p>&copy Copyright <small>Flexor</small>. All rights reserved</p>
+          <p>Designed by <small class="bootstrap">BootstrapMade</small></p>
+        </div>
+        <div class="socials flex item-center">
+          <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-skype"></i></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -190,6 +190,14 @@ body {
   align-items: center;
 }
 
+.item-baseline {
+  align-items: baseline;
+}
+
+.flex15 {
+  flex: 0 1 15%;
+}
+
 .flex20 {
   flex: 0 1 20%;
 }
@@ -1177,12 +1185,12 @@ body {
 
 /* section (contact) */
 
-.contact{
+.contact {
   width: 100%;
   background-color: #ffffff;
 }
 
-.contact article h2{
+.contact article h2 {
   font-size: 1.6rem;
   font-weight: 600;
   color: #554945;
@@ -1192,7 +1200,7 @@ body {
   text-align: center;
 }
 
-.contact article p{
+.contact article p {
   color: black;
   font-size: 1rem;
   line-height: 1.3;
@@ -1200,25 +1208,26 @@ body {
   text-align: center;
 }
 
-.contact-card{
+.contact-card {
+  margin-top: 1rem;
   height: 8rem;
   background-color: #ffffff;
-  box-shadow: 0.2rem 0.2rem 2rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0.2rem 0.2rem 2rem rgba(102, 102, 102, 0.3);
 }
 
-.contact-card span{
+.contact-card span {
   padding-left: 1rem;
   margin-top: 1.5rem;
 }
 
-.contact-card span i{
- font-size: 1.5rem;
- border: 0.1rem dashed #dd610e;
- padding: 0.5rem;
- border-radius: 50%;
+.contact-card span i {
+  font-size: 1.5rem;
+  border: 0.1rem dashed #dd610e;
+  padding: 0.5rem;
+  border-radius: 50%;
 }
 
-.contact-card span h3{
+.contact-card span h3 {
   font-size: 1.6rem;
   font-weight: 600;
   color: #554945;
@@ -1227,9 +1236,171 @@ body {
   margin-left: 0.5rem;
 }
 
-.contact-card small{
-  
+.contact-card small {
   color: black;
   font-size: 1rem;
   text-transform: capitalize;
 }
+
+.contact-form {
+  padding: 2rem;
+  margin-top: 2.5rem;
+  background-color: #ffffff;
+  box-shadow: 0.2rem 0.2rem 2rem rgba(102, 102, 102, 0.3);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 30rem;
+}
+
+label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+input,
+textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+input[type="submit"] {
+  background-color: #dd610e;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #dd610e;
+}
+
+/* Section (newsletter) */
+
+.newsletter {
+  width: 100%;
+  background-color: #fef9f7;
+}
+
+.add h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #222222;
+}
+
+.add p {
+  font-size: 1rem;
+  color: rgb(103, 103, 103);
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.add span {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.add span small {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.links-services h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #222222;
+  margin-bottom: 1rem;
+}
+
+.links-services span {
+  margin-bottom: 1rem;
+}
+
+.links-services span i {
+  margin-right: 0.5rem;
+}
+
+.links-services span small {
+  font-size: 1rem;
+  color: rgb(103, 103, 103);
+  line-height: 1.5;
+}
+
+.newsletter-btn h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #222222;
+  margin-bottom: 1rem;
+}
+
+.newsletter-btn p {
+  font-size: 1rem;
+  color: rgb(34, 34, 34);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.subscribe {
+  width: 100%;
+  height: 3rem;
+  border: 0.1rem solid #dd996c;
+  border-radius: 2rem;
+  justify-content: flex-end;
+  background-color: #ffffff;
+}
+
+.subscribe a {
+  width: 30%;
+  text-decoration: none;
+  padding: 0.9rem;
+  border-radius: 2rem;
+  background-color: #dd610e;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.footer div div p {
+  font-size: 1rem;
+  color: rgb(34, 34, 34);
+  line-height: 1.5;
+}
+
+.footer div div p small {
+  font-weight: 600;
+}
+
+.bootstrap {
+  color: #dd610e;
+}
+
+.socials a i {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  background-color: #dd610e;
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+
+/* Responsive part */
