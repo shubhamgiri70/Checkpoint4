@@ -144,12 +144,17 @@ body {
   line-height: 1;
   margin: 0;
   padding: 0;
+
 }
 
 .container {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+.font-raleway {
+  font-family: "Raleway", sans-serif;
 }
 
 .width-full {
@@ -258,6 +263,7 @@ body {
 
 .header {
   background-color: #ffffff;
+  height: 3rem;
   z-index: 2;
 }
 
@@ -1213,6 +1219,7 @@ body {
   height: 8rem;
   background-color: #ffffff;
   box-shadow: 0.2rem 0.2rem 2rem rgba(102, 102, 102, 0.3);
+  text-align: center;
 }
 
 .contact-card span {
@@ -1225,6 +1232,7 @@ body {
   border: 0.1rem dashed #dd610e;
   padding: 0.5rem;
   border-radius: 50%;
+  margin-right: 2rem;
 }
 
 .contact-card span h3 {
@@ -1403,3 +1411,55 @@ input[type="submit"]:hover {
 }
 
 /* Blog page */
+
+main{
+  position: relative;
+}
+
+
+.blog {
+  width: 100%;
+  background-color: #fef9f7;
+  position: absolute;
+  margin-top: 6rem;
+  top: 1rem;
+}
+
+.blog div a{
+  margin-right: 0.3rem;
+  text-transform: capitalize;
+  margin-bottom: 0.3rem;
+  text-decoration: none;
+  color: #000000;
+}
+
+.blog div span{
+  margin-right: 0.3rem;
+}
+
+.active-home-btn:hover{
+  color: #dd610e;
+}
+
+.blog h2 {
+  font-size: 2rem;
+  color: #554945;
+}
+
+/* Section (blog article) */
+
+.blog-article{
+  width: 100%;
+  background-color: #ffffff;
+  
+  
+}
+
+.blog-article div{
+ 
+  
+}
+
+.blog-article div article{
+ 
+}
