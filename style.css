@@ -144,7 +144,6 @@ body {
   line-height: 1;
   margin: 0;
   padding: 0;
-
 }
 
 .container {
@@ -263,7 +262,7 @@ body {
 
 .header {
   background-color: #ffffff;
-  height: 3rem;
+  height: 5rem;
   z-index: 2;
 }
 
@@ -1385,6 +1384,7 @@ input[type="submit"]:hover {
 .footer {
   width: 100%;
   background-color: #ffffff;
+  position: relative;
 }
 
 .footer div div p {
@@ -1410,22 +1410,32 @@ input[type="submit"]:hover {
   color: #ffffff;
 }
 
+.footer button {
+  background-color: #dd610e;
+  border: none;
+  position: fixed;
+  right: 1rem;
+  bottom: 2.5rem;
+}
+
+.footer button a i {
+  font-size: 1.5rem;
+}
+
 /* Blog page */
 
-main{
+.blog-section {
   position: relative;
 }
 
-
 .blog {
   width: 100%;
-  background-color: #fef9f7;
+  background-color: #f7efec;
   position: absolute;
-  margin-top: 6rem;
-  top: 1rem;
+  top: 6rem;
 }
 
-.blog div a{
+.blog div a {
   margin-right: 0.3rem;
   text-transform: capitalize;
   margin-bottom: 0.3rem;
@@ -1433,11 +1443,11 @@ main{
   color: #000000;
 }
 
-.blog div span{
+.blog div span {
   margin-right: 0.3rem;
 }
 
-.active-home-btn:hover{
+.active-home-btn:hover {
   color: #dd610e;
 }
 
@@ -1448,18 +1458,57 @@ main{
 
 /* Section (blog article) */
 
-.blog-article{
+.blog-article {
+  position: absolute;
+  top: 14rem;
+  margin-top: 2rem;
+}
+
+.blog-article article div {
+  box-shadow: 0.2rem 0.2rem 2rem rgba(102, 102, 102, 0.3);
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.blog-article article div img {
   width: 100%;
+}
+
+.blog-article article div h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.5rem;
+}
+
+.blog-article article div div {
+  padding: 0.5rem;
+}
+
+.blog-article article div div span {
+  margin-right: 1rem;
+}
+
+.blog-article article div div span i {
+  margin-right: 0.5rem;
+}
+
+.blog-article article div p {
+  padding: 0.5rem;
   background-color: #ffffff;
-  
-  
+  margin-bottom: 1rem;
+  line-height: 1;
 }
 
-.blog-article div{
- 
-  
+.blog-article article div span {
+  display: flex;
+  justify-content: end;
 }
 
-.blog-article div article{
- 
+.blog-article article div span a {
+  text-decoration: none;
+  background-color: #dd610e;
+  color: #ffffff;
+  padding: 0.5rem;
+  margin: 0 0.5rem 1rem 0;
 }
