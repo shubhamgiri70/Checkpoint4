@@ -1512,3 +1512,42 @@ input[type="submit"]:hover {
   padding: 0.5rem;
   margin: 0 0.5rem 1rem 0;
 }
+
+/* Section (pages) */
+
+.pages {
+  position: absolute;
+  top: 95rem;
+  left: 37rem;
+}
+
+.pages div span {
+  margin-right: 2rem;
+  border: 0.07rem solid rgb(136, 135, 135);
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  color: #676464;
+}
+
+.pages div .active {
+  background-color: #dd610e;
+  color: #efeeee;
+}
+
+/* section newsletter-blog */
+
+.newsletter-blog {
+  width: 100%;
+  background-color: #fef9f7;
+  position: absolute;
+  top: 100rem;
+}
+
+/* Footer-blog */
+
+.footer-blog {
+  width: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 120rem;
+}
