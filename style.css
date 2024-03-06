@@ -348,6 +348,18 @@ body {
   display: inline-block;
 }
 
+/* Hide the label by default on larger screens */
+
+.toggle-button {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+#menu-toggle {
+  display: none; /* Hide the checkbox by default */
+}
+
 /* Main (Hero) */
 
 .hero-bg {
@@ -1553,3 +1565,223 @@ input[type="submit"]:hover {
 }
 
 /* Responsive part */
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
+
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+  }
+
+  /* Section (Hero) */
+
+  .hero-bg-inside {
+    padding-top: 7rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 8px;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+  }
+
+  .sm-column {
+    flex-direction: column;
+  }
+
+  .sm-full-width {
+    width: 100%;
+  }
+
+  .sm-margin {
+    margin: 1.5rem 0;
+  }
+
+  /* header */
+
+  .navmenu {
+    display: none;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    padding-top: 4rem;
+    background-color: rgba(249, 245, 245, 0.9);
+    box-shadow: 0 0.2rem 0.3rem #bca4a0;
+    border-radius: 0.3rem;
+    z-index: 1;
+  }
+
+  #menu-toggle:checked + .toggle-button ~ .navmenu {
+    /* Show the label when the checkbox is checked */
+    color: #ea5333;
+    display: inline-block;
+  }
+
+  .navmenu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .toggle-button {
+    display: block; /* Show the label on smaller screens */
+    margin-left: auto;
+  }
+
+  .navmenu li {
+    margin: 1.5rem 0;
+  }
+
+  .sub-menu,
+  .inside-sub-menu {
+    width: 100%;
+  }
+
+  /* Section (Hero) */
+
+  .card-parent {
+    position: static;
+  }
+
+  .card {
+    margin: 1rem 0;
+  }
+
+  .hero-bg-inside {
+    padding-top: 7rem;
+  }
+
+  /* Section (About) */
+
+  .about {
+    position: relative;
+    top: 40rem;
+    bottom: 8rem;
+  }
+
+  .about-txt {
+    margin-top: 2rem;
+  }
+
+  .bg-image-about {
+    flex: none;
+    height: 50vh;
+  }
+
+  /* Section (clients) */
+  .clients {
+    position: relative;
+    top: 41rem;
+    bottom: 8rem;
+  }
+
+  /* Section (service) */
+  .service {
+    position: relative;
+    top: 40rem;
+    bottom: 8rem;
+  }
+
+  .service-card span {
+    right: 0rem;
+    left: 22rem;
+    bottom: 11.2rem;
+  }
+
+  /* Section (company-future) */
+  .company-future {
+    position: relative;
+    top: 40rem;
+    bottom: 8rem;
+  }
+
+  /* Section (testimonials) */
+  .testimonials-bg {
+    position: relative;
+    top: 40rem;
+    bottom: 8rem;
+  }
+
+  .testimonials-txt {
+    padding: 0 0.5rem;
+  }
+
+  /* Section (portfolio) */
+  .portfolio {
+    position: relative;
+    top: 40rem;
+    bottom: 8rem;
+  }
+
+  .sm-portfolio-image {
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+  }
+
+  /* Section (Team) */
+  .team {
+    position: relative;
+    top: 40rem;
+    bottom: 8rem;
+  }
+
+  .team-img {
+    height: 40vh;
+  }
+
+  .team-img-transparent {
+    height: 4rem;
+  }
+
+  .team-img-transparent i {
+    font-size: 3rem;
+  }
+
+  /* Section (pricing) */
+  .pricing {
+    position: relative;
+    top: 40rem;
+    bottom: 8rem;
+  }
+
+  /* Section (faqs) */
+  .faqs {
+    position: relative;
+    top: 40rem;
+    bottom: 8rem;
+  }
+
+  /* Section (contact) */
+  .contact {
+    position: relative;
+    top: 40rem;
+    bottom: 8rem;
+  }
+
+  /* Section (Newsletter) */
+  .newsletter {
+    position: relative;
+    top: 40rem;
+    bottom: 8rem;
+  }
+
+  /* Footer */
+  .footer {
+    position: relative;
+    top: 40rem;
+    bottom: 8rem;
+  }
+}
