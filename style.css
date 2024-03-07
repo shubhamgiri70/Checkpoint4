@@ -1589,6 +1589,10 @@ input[type="submit"]:hover {
     font-size: 8px;
   }
 
+  .sm-section-display {
+    display: contents;
+  }
+
   .container {
     max-width: 720px;
     margin: 0 auto;
@@ -1605,6 +1609,18 @@ input[type="submit"]:hover {
 
   .sm-margin {
     margin: 1.5rem 0;
+  }
+
+  .sm-block {
+    display: block;
+  }
+
+  .sm-text-center {
+    text-align: center;
+  }
+
+  .sm-item-center {
+    align-items: center;
   }
 
   /* header */
@@ -1771,6 +1787,14 @@ input[type="submit"]:hover {
     bottom: 8rem;
   }
 
+  .contact-card {
+    flex: none;
+  }
+
+  .contact-card span {
+    margin-bottom: 1.2rem;
+  }
+
   /* Section (Newsletter) */
   .newsletter {
     position: relative;
@@ -1782,6 +1806,47 @@ input[type="submit"]:hover {
   .footer {
     position: relative;
     top: 40rem;
+    bottom: 8rem;
+  }
+
+  /* Blog page */
+
+.blog-section{
+  position: relative;
+  bottom: 3rem;
+}
+
+  /* Section (Blog article) */
+
+.blog-article{
+  position: relative;
+  top: 10rem;
+  bottom: 8rem;
+}
+
+.blog-article article{
+  padding: 0 0 0 1.8rem;
+}
+
+
+/* Section (pages) */
+.pages{
+   display: none;
+}
+
+
+/* Section (Newsletter) */
+  .newsletter-blog{
+    position: relative;
+    top: 10rem;
+    bottom: 8rem;
+  }
+
+
+  /* Section (Blog footer) */
+  .footer-blog{
+    position: relative;
+    top: 10rem;
     bottom: 8rem;
   }
 }
